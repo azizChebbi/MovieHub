@@ -1,4 +1,4 @@
-const app_key = 'f2fbf5dbeb1cfe62abc130da10bdc838';
+const app_key = 'APP_KEY';
 
 
 export default {
