@@ -1,6 +1,6 @@
 import firebase from 'firebase'
 var firebaseConfig = {
-    apiKey: "AIzaSyAZabSigUhocmS65VyIZCIMtXF4tW7wB9U",
+    apiKey: "SECRET_KEY",
     authDomain: "netflix-54a41.firebaseapp.com",
     databaseURL: "https://netflix-54a41.firebaseio.com",
     projectId: "netflix-54a41",
