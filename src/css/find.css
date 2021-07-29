@@ -1,0 +1,40 @@
+.find{
+    width :  100% ;
+    height : 100% ;
+    margin :  0 ;
+    color :white ;
+}
+.find div.first{
+    margin: 40px auto ;
+}
+.find div input{
+    padding : 5px ;
+    outline : none ;
+    width : 300px ;
+}
+.find div button{
+    font-size : 22px ;
+    color :red ;
+    background: transparent;
+    border : none ;
+    outline : none ;
+    cursor : pointer ;
+}
+.find div{
+    display :flex ;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.find div img{
+    width : 200px ;
+    height : 200px  ;
+    object-fit: cover;
+    margin : 10px ;
+}
+@media screen and (max-width:450px ){
+    .find div img{
+        width : 150px ;
+        height : 150px ;
+    }
+}
