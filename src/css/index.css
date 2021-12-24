@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 0px; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+::-webkit-scrollbar {
+    width: 0px; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+    height: 4px;
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: white;
+}
+body {
+    background-color: rgb(20, 19, 19);
+    width: 100vw;
+}
+
+div.created {
+    padding: 30px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+div.created a {
+    color: white;
+}

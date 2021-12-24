@@ -1,0 +1,69 @@
+.find {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    color: white;
+}
+
+.find nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    z-index: 100;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.find div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.find div img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+}
+.find nav .film-link {
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    padding: 4px 20px;
+    border-radius: 2px;
+    background-color: #d00000;
+}
+
+.find nav h2 {
+    font-size: 45px;
+    font-weight: bolder;
+    color: #d00000;
+
+    cursor: context-menu;
+}
+
+.find div.first {
+    margin: 40px auto;
+}
+.find div input {
+    padding: 5px;
+    outline: none;
+    width: 300px;
+}
+.find div button {
+    font-size: 22px;
+    color: red;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 450px) {
+    .find div img {
+        width: 150px;
+        height: 150px;
+    }
+}

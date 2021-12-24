@@ -1,88 +1,87 @@
-.home{
-    margin:0;
-    width : 100vw ;
-    position :relative ;
-    height : 100vh ;
+.home {
+    margin: 0;
+    width: 100vw;
+    position: relative;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: url("https://dkr0pu7ej5xex.cloudfront.net/wp-content/uploads/2017/04/24135159/Netflix-Background.jpg");
     opacity: 0.95;
+    background-image: url("../images/bg.jpg");
+    background-position: center;
+    background-size: cover;
 }
-.home::before{
-    content : '' ;
-    position : absolute ;
-    background-color: rgba(0,0,0,.5);
-    left : 0 ;
-    right : 0 ;
-    top : 0 ;
-    bottom : 0 ;
+.home::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
-.home nav{
-    display :flex ;
+.home nav {
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    padding : 30px 50px ;
-    z-index :100 ;
+    padding: 30px 50px;
+    z-index: 100;
 }
-.home nav h2{
-    font-size : 45px ;
+.home nav h2 {
+    font-size: 45px;
     font-weight: bolder;
     color: #d00000;
-    font-family: sans-serif;
+
     cursor: context-menu;
 }
-.home nav .home-link{
-    text-decoration : none ;
-    font-size : 17px ;
-    color :white  ;
-    padding : 4px 20px ;
-    border-radius: 2px ;
+.home nav .home-link {
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    padding: 4px 20px;
+    border-radius: 2px;
     background-color: #d00000;
-    font-family :sans-serif
 }
-.home .home-main{
-    display :flex ; 
+.home .home-main {
+    display: flex;
     justify-content: center;
     align-items: center;
-    width : 100% ;
-    height : auto ;
-    flex : 1 ;
-    z-index : 100 ;
+    width: 100%;
+    height: auto;
+    flex: 1;
+    z-index: 100;
 }
-.home .home-main div p:first-child{
+.home .home-main div p:first-child {
     font-weight: bolder;
-    font-size : 60px ; 
+    font-size: 60px;
     text-align: center;
-    color :white ;
-    font-family: sans-serif;
+    color: white;
 }
-.home .home-main div p:last-child{
+.home .home-main div p:last-child {
     font-weight: bold;
-    font-size : 30px ;
+    font-size: 30px;
     text-align: center;
-    margin-top : 20px ;
-    color :white ;
-    font-family: sans-serif;
+    margin-top: 20px;
+    color: white;
 }
-@media screen and (max-width : 650px){
-    .home .home-main div p:first-child{
-        font-size : 45px ;
+@media screen and (max-width: 650px) {
+    .home .home-main div p:first-child {
+        font-size: 45px;
     }
-    .home .home-main div p:last-child{
-        font-size : 25px ; 
+    .home .home-main div p:last-child {
+        font-size: 25px;
     }
 }
-@media screen and (max-width : 480px ){
-    .home nav{
-        padding : 30px 10px ;
+@media screen and (max-width: 480px) {
+    .home nav {
+        padding: 30px 10px;
     }
-    .home nav h2{
-        font-size : 35px ;
+    .home nav h2 {
+        font-size: 35px;
     }
-    .home .home-main div p:first-child{
-        font-size : 35px ;
+    .home .home-main div p:first-child {
+        font-size: 35px;
     }
-    .home .home-main div p:last-child{
-        font-size : 20px ; 
+    .home .home-main div p:last-child {
+        font-size: 20px;
     }
 }

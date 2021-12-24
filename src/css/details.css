@@ -1,0 +1,191 @@
+.film {
+    width: 100vw;
+    overflow-x: hidden;
+}
+.film * {
+    box-sizing: border-box;
+}
+.film nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    z-index: 100;
+    width: 100%;
+    box-sizing: border-box;
+}
+.film nav h2 {
+    font-size: 45px;
+    font-weight: bolder;
+    color: #d00000;
+
+    cursor: context-menu;
+}
+.film nav .film-link {
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    padding: 4px 20px;
+    border-radius: 2px;
+    background-color: #d00000;
+}
+.film .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+
+.film div div.second {
+    width: 55%;
+    height: 80vh;
+    position: relative;
+}
+.film div div.first {
+    width: 45%;
+    height: 80vh;
+    position: relative;
+    padding: 30px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+
+.film div div img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 0.5s;
+}
+.film div div img:hover {
+    transform: scale(1.1);
+}
+.film div div h1 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.film div div .etoile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin: 20px 0;
+}
+.film div div section {
+    text-align: center;
+    margin: 40px auto;
+    /*background-color : red ;*/
+}
+.film div section button {
+    background-color: transparent;
+    padding: 5px;
+    font-size: 20px;
+    margin: 0 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.film div section button.active {
+    border-bottom: red 2px solid;
+}
+.film div section button:focus {
+    outline: 0;
+}
+.second section div {
+    color: white;
+}
+.second section .hidden {
+    display: none;
+}
+.second section .title {
+    margin: 80px auto;
+    font-size: 20px;
+    width: 80%;
+}
+.second section .detail {
+    margin: 80px auto;
+    width: 60%;
+    font-size: 20px;
+}
+.second section .trailer {
+    margin: 30px auto;
+}
+.second section .detail p {
+    margin: 20px auto;
+
+    display: flex;
+    align-items: center;
+}
+.second section .detail p span.first {
+    font-weight: 100;
+    text-transform: capitalize;
+    color: grey;
+    padding-left: 10px;
+    padding-right: 5px;
+    text-align: justify;
+}
+.second section .detail p span.second {
+    font-weight: bold;
+    font-size: 20px;
+}
+@media screen and (max-width: 1300px) {
+    .container {
+        flex-direction: column;
+    }
+    .film div div.first {
+        margin-top: 0px;
+        width: 100%;
+        height: 400px;
+        padding: 0;
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        margin-bottom: -30px;
+    }
+
+    .film div div.second {
+        width: 100%;
+    }
+    .film div div h1 {
+        font-size: 40px;
+    }
+    .second section .title {
+        text-align: left;
+    }
+    .film div div img {
+        object-fit: cover;
+    }
+}
+@media screen and (max-width: 500px) {
+    .film section .title {
+        margin: 50px auto;
+    }
+    .film section .title p {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+    .film div div.first {
+        height: 200px;
+    }
+    .film nav h2,
+    .find nav h2 {
+        font-size: 30px;
+    }
+    .film nav .film-link,
+    .find nav .film-link {
+        padding: 4px 10px;
+    }
+    .second section .detail {
+        margin: 80px auto;
+        width: 100%;
+        font-size: 20px;
+    }
+    .second section .detail p {
+        width: 80%;
+        margin: 20px auto;
+    }
+    .second section .detail p span {
+        font-size: 20px;
+    }
+}
