@@ -1,14 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../../css/header.css";
 
 function Header() {
     return (
-        <nav>
+        <header className='header'>
             <h2>NETFLIX</h2>
-            <Link className='film-link' to='/main'>
+            <Link className='link' to='/main'>
                 Enjoy
             </Link>
-        </nav>
+        </header>
     );
 }
 
