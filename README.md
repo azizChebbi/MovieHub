@@ -12,4 +12,4 @@ For the design, I used Material-Ui and bootstrap tools to provide a better user 
 I get the movies and tv shows data and trailer with the assistance of axios and Youtube node packages.
 
 # live demo 
-https://netflix-54a41.web.app/
+https://movies-series-bb260.web.app/
